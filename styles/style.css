@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(80deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 92%);
+
+}
+.popupContainer{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    transform: scale(0);
+}
+.signUpPopup{
+    width: 350px;
+    height: 280px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 1);
+
+
+}
+.signUpPopup header{
+    width: 100%;
+    /* position: absolute;
+    top: 0; */
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.signUpPopup header .closeIcon{
+    cursor: pointer;
+}
+.signUpPopup .body input{
+    width: 100%;
+    height: 50px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+/* .signUpPopup .body .btn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+} */
+.signUpPopup .body .btn button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.createAcct{
+    display: flex;
+    justify-content: space-between;
+}
+.show{
+    transform: scale(1);
+}
+
+nav{
+    width: 100%;
+    background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 53%);
+    height: 80px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    border-bottom: 1px solid #fff;
+    top: 0;
+}
+nav label{
+    font-size: 27px;
+    font-weight: bold;
+    font-family: cursive;
+}
+nav .info{
+    display: flex;
+    align-items: center;
+    z-index: 1111;
+}
+nav .info input{
+    padding: 7px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    /* font-size: 15px; */
+    font-weight: 600;
+}
+nav .info .userInfo{
+    display: flex;
+}
+nav .info .userInfo .icon{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 5px;
+}
+.container{
+    /* -top: 20px; */
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    padding-top: 110px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* padding: 90px 10px 10px 10px; */
+}
+.container .card{
+    /* width: 200px; */
+    height: 300px;
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+.container .card:hover{
+    scale: 1.08;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 1);
+}
+.container .card .img{
+    width: 100%;
+    height: 85%;
+}
+.container .card .img img{
+    width: 100%;
+    height: 100%;
+}
+.container .card .productInfo{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #000;
+}
+.container .card .productInfo .details{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 4px 10px;
+}
+/* .container .card .productInfo .addToCartBtn button{
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    
+} */
+/* .container .card .productInfo .addToCartBtn button:hover{
+    background: linear-gradient(50deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 53%);
+} */
+.cardContainer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+.hide{
+    display: none;
+}
+/* .items{
+    width: 200px;
+    height: 20px;
+    background-color: red;
+} */
+
+
+
+
+
+
+
